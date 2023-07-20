@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 2</title>
+</head>
+<body>
+    <h1>chapter 2</h1>
+
+
+
+    <script>
+
+// Practice exercise 2.3
+
+// Write some code to calculate the hypotenuse of a triangle using the Pythagorean
+// theorem when given the values of the other two sides. The theorem specifies that the
+// relation between the sides of a right-angled triangle is a2 + b2 = c2.
+
+// You can use prompt() to get the value for a and b. Write code to get the value from
+// the user for a and b. Then square the values of both a and b before adding them
+// together and finding the square root. Print your answer to the console
+
+/*
+let a=prompt("enter a value");
+a=Number.parseInt(a);
+
+let b=prompt("enter b value");
+b=Number.parseInt(b);
+
+
+
+
+
+if(isNaN(a) || isNaN(b)){
+    alert("Invalid input. Please enter valid numbers")
+}
+else{
+    squareA=a**2;
+    squareB=b**2;
+    
+}
+let hypotenuse=Math.sqrt(squareA+squareB);
+alert("The hypotenuse of the triangle is: "+hypotenuse);
+alert(hypotenuse)
+
+*/
+
+// Practice exercise 2.4
+
+// Create variables for three numbers: a, b, and c. Update these variables with the
+// following actions using the assignment operators:
+// • Add b to a
+// • Divide a by c
+// • Replace the value of c with the modulus of c and b
+// • Print all three numbers to the console
+ 
+// let a=6;
+// let b=8;
+// let c=8;
+
+// b=b+a;
+// a=a/c;
+// c=c%b;
+
+// console.log(b);
+// console.log(a);
+// console.log(c);
+
+
+
+//Miles-to-kilometers converter
+// Create a variable that contains a value in miles, convert it to kilometers, and log the
+// value in kilometers in the following format: 
+
+// let miles=Number.parseFloat(prompt("enter you number."));
+// kilometers=miles*1.609344;
+// console.log(`The distance of ${miles} kms is equal to ${kilometers} miles`)
+
+
+// BMI calculator
+// Set values for height in inches and weight in pounds, then convert the values to
+// centimeters and kilos, outputting the results to the console:
+// • 1 inch is equal to 2.54 cm
+// • 2.2046 pounds is equal to 1 kilo
+// Output the results. Then, calculate and log the BMI: this is equal to weight (in kilos)
+// divided by squared height (in meters). Output the results to the console.
+
+
+
+// Set values for height in inches and weight in pounds
+const heightInInches = 65; 
+const weightInPounds = 150; 
+
+// Conversion factors
+const inchesToCentimeters = 2.54;
+const poundsToKilos = 0.453592;
+
+// Convert height from inches to centimeters
+const heightInCentimeters = heightInInches * inchesToCentimeters;
+
+// Convert weight from pounds to kilograms
+const weightInKilos = weightInPounds * poundsToKilos;
+
+console.log(`Height: ${heightInCentimeters.toFixed(2)} cm`);
+console.log(`Weight: ${weightInKilos.toFixed(2)} kg`);
+
+// Calculate BMI
+const heightInMeters = heightInCentimeters / 100; // Convert height to meters
+const bmi = weightInKilos / (heightInMeters * heightInMeters);
+
+
+
+console.log(`BMI: ${bmi.toFixed(2)}`);
+
+
+
+    </script>
+</body>
+</html>
