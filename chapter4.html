@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 4</title>
+</head>
+<body>
+    <script>
+        // 1. Generate a random number 0-5
+let randomNum = Math.floor(Math.random() * 6);
+console.log(randomNum)
+// 2. Get a string value input from a user
+let userInput = prompt("Ask a yes or no question:");
+
+// 3. Create 6 responses using the switch statement
+let response;
+switch(randomNum) {
+    case 0:
+        response = "responce 1";
+        break;
+    case 1:
+        response = "responce 2";
+        break;
+    case 2:
+        response = "responce 3";
+        break;
+    case 3:
+        response = "responce 4";
+        break;
+    case 4:
+        response = "responce 5";
+        break;
+    case 5:
+        response = "responce 6";
+        break;
+}
+
+// 4. Create a variable to hold the end response
+let finalResponse = "You asked: " + userInput + "\nMagic 8 Ball answers: " + response;
+
+// 5. Output the user's original question and the randomly selected response
+console.log(finalResponse);
+
+    </script>
+</body>
+</html>
